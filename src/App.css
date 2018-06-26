@@ -1,19 +1,23 @@
 @font-face {
   font-family: "norm";
-  src:url(/fonts/Montserrat-Bold.ttf);
+  src:url("/fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
   font-family: "bold";
-  src:url(/fonts/Montserrat-Black.ttf);
+  src:url("/fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+  font-family:"skinny";
+  src:url("/fonts/Montserrat-Regular.ttf");
 }
 
 * {
   padding: 0;
   margin: 0;
-  max-width: 100vw;
+  overflow-x: hidden;
   font-family: bold;
-  background-color: black;
 }
 
 .center {
@@ -158,12 +162,12 @@
   color: #B7FF77;
 }
 
-.work:hover {
+.photos:hover {
   opacity: 0.5;
   color: #F977FF;
 }
 
-.glitch:hover {
+.music:hover {
   opacity: 0.5;
   color: #FFA077;
   animation: rainbow 0.1s infinite;
@@ -184,6 +188,14 @@
 .lines {
   width: 100%;
   height: 100%;
+}
+
+.music-grid {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 @media screen and (max-width: 56.25em) {
