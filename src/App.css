@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "norm";
+  src:url(/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "bold";
+  src:url(/fonts/Montserrat-Black.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  font-family: bold;
+  background-color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.pg1 {
+  background-image: url("/img/me-dark.jpg");
+  background-color: black;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url(/img/cur-white.png) 15 15, auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.pg2 {
+  color: #dadada;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  cursor: url(/img/cur-black.png) 15 15, auto;
+  font-family: bold;
+  font-size: 2em;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 3;
+}
+
+.pg3 {
+  color: #dadada;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  cursor: url(/img/cur-white.png) 15 15, auto;
+  font-size: 2em;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.nav {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #d8d8da;
+  display: flex;
+  justify-content: center;
+  cursor: url(/img/cur-black.png) 15 15, auto;
+  z-index: 1;
+}
+
+.nav-group {
+  font-family: norm;
+  position: fixed;
+  text-align: center;
+  background-color: #d8d8da;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  font-size: 3em;
+}
+
+.nav-item {
+  margin: 60px;
+  background-color: #d8d8da;
+}
+
+.header {
+  max-width: 700px;
+  width: 0ppx;
+  font-size: 1.2em ;
+  color: #fff;
+  font-family: "bold";
+  text-align: right;
+}
+
+.desc {
+  font-size: 0.6em;
+  font-family: norm;
+  color: #fff;
+  width: 600px;
+  margin-top: 100px;
+  transition: 1s;
+  /* background-color: #fff; */
+  cursor: url(/img/cur-black.png) 15 15, auto;
+}
+
+.img {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 0em;
+}
+
+@keyframes rainbow {
+  0% {color: #FF7777;}
+  10% {color: #FFA077;}
+  20% {color: #FFF977;}
+  30% {color: #B7FF77;}
+  40% {color: #77FFB5;}
+  50% {color: #77FFF1;}
+  60% {color: #77ABFF;}
+  70% {color: #7B77FF;}
+  80% {color: #B377FF;}
+  90% {color: #F977FF;}
+  100% {color: #FF7777;}
+}
+
+.line-top, .line-bottom, .line-mid {
+  height: 2px;
+  width: 20px;
+  background-color: #0c0c0c;
+  cursor: url(/img/cur-black.png) 15 15, auto;
+  position: absolute;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #d8d8da;
+  z-index: 2;
+  cursor: url(/img/cur-black.png) 15 15, auto;
+  border-radius: 3em;  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 80px;
+  top: 80px;
+}
+
+.home:hover {
+  opacity: 0.5;
+  color: #B7FF77;
+}
+
+.work:hover {
+  opacity: 0.5;
+  color: #F977FF;
+}
+
+.glitch:hover {
+  opacity: 0.5;
+  color: #FFA077;
+  animation: rainbow 0.1s infinite;
+}
+
+.audio {
+  margin-top: 100px;
+  width: 300px;
+  cursor: url(/img/cur-black.png) 15 15, auto;
+}
+
+.lineDrawing {
+  min-width: 1080px;
+  min-height: 500px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.lines {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 56.25em) {
+
+  .nav-group {
+    font-family: bold;
+    position: fixed;
+    text-align: center;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    font-size: 3em;
+  }
+
+  .nav-item {
+    margin: 10px;
+    background-color: #d8d8da;
+  }
+
+}
+
+@media screen and (max-width: 50em) {
+
+  .lineDrawing {
+    min-width: 270px;
+    min-height: 125px;
+    display: flex;
+  }
+
+  .circle {
+    left: 25px;
+    top: 25px;
+  }
+
+  .header {
+    max-width: 200px;
+  }
+
+  .nav-group {
+    font-family: bold;
+    position: fixed;
+    text-align: center;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    font-size: 3em;
+  }
+
+  .nav-item {
+    margin: 10px;
+    background-color: #d8d8da;
+  }
+
+  .desc {
+    font-size: 0.5em;
+    max-width: 50vw;
+  }
+
+}

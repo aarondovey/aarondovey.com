@@ -1,0 +1,9 @@
+@keyframes typing {
+  from { width: 0ch}
+  to { width: 12ch}
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
