@@ -1,0 +1,36 @@
+<div className="gallery">
+  <div className="project">
+    <img src="img/sunset.jpg" className="gallery-img" alt=""/>
+  </div>
+  <div className="project">
+    <img src="img/me.jpg" className="gallery-img" alt=""/>
+  </div>
+  <div className="project">
+    <img src="img/neon.jpg" className="gallery-img" alt=""/>
+  </div>
+  <div className="project">
+    <img src="img/roof.jpg" className="gallery-img" alt=""/>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="Gallery">
+  {data &&
+    data.map((item, key) => {
+      return <Gallery key={key} img={item.img}/>
+    })
+  }
+</div>

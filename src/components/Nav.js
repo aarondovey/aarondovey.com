@@ -14,6 +14,18 @@ class Nav extends React.Component {
     });
 
     navopen
+
+    .add({
+      targets: '.circle',
+      offset: 0,
+      backgroundColor: [
+        {value: '#fff'},
+        {value: '#000'}
+      ],
+      delay: 50,
+      duration: 800
+    })
+
     .add({
       targets: '.line-bottom',
       offset: 0,
@@ -45,7 +57,7 @@ class Nav extends React.Component {
       opacity: [1,0],
       backgroundColor: [
          {value: '#000'},
-         {value: '#d8d8da'},
+         {value: '#fff'},
        ],
     })
 
@@ -75,7 +87,7 @@ class Nav extends React.Component {
     })
 
     .add({
-      targets: '.work',
+      targets: '.photos',
       offset: 180,
       translateY: ['-1000','0'],
       delay: 200
@@ -87,17 +99,8 @@ class Nav extends React.Component {
       translateY: ['-1000','0'],
       delay: 200
     })
+    ;
 
-    .add({
-      targets: '.circle',
-      offset: 0,
-      backgroundColor: [
-         {value: '#d8d8da'},
-         {value: '#000'},
-       ],
-      delay: 50,
-      duration: 800
-    });
 
     document.querySelector('.circle').onclick = function() {
       navopen.play();
@@ -107,17 +110,24 @@ class Nav extends React.Component {
     document.querySelector('.home').onclick = function() {
       navopen.play();
       navopen.reverse();
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
     document.querySelector('.photos').onclick = function() {
       navopen.play();
       navopen.reverse();
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
     document.querySelector('.music').onclick = function() {
       navopen.play();
       navopen.reverse();
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
   }
 
   render() {
@@ -133,11 +143,12 @@ class Nav extends React.Component {
 
         <div className="nav center">
             <ul className="nav-group">
-              <Link to="/" className="nav-item home">home</Link>
-              <Link to="/photos" className="nav-item photos">photos</Link>
-              <Link to="/music" className="nav-item music">music</Link>
+              <Link to="/" className="nav-item home">🏡</Link>
+              <Link to="/photos" className="nav-item photos">📷</Link>
+              <Link to="/music" className="nav-item music">🎵</Link>
             </ul>
         </div>
+
       </div>
     )
   }

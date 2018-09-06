@@ -2,16 +2,9 @@ import React, {Component} from 'react';
 
 import anime from 'animejs';
 import Reveal from 'react-reveal';
+import Fade from 'react-reveal/Fade';
 
-import MusicPlayer from '../MusicPlayer/MusicPlayer';
 
-const data = [
-  {name: "poop", artist: "james", image: "/img/me.jpg"},
-  {name: "kerjnf", artist: "jadkfjhmes", image: "/img/me2.jpg"},
-  {name: "poerkfjrop", artist: "jamersdes", image: "/img/me3.jpg"},
-  {name: "wrrf", artist: "jukllo", image: "/img/me4.jpg"},
-  {name: "tjutj", artist: "ethett", image: "/img/me5.jpg"},
-]
 
 class Home extends Component {
 
@@ -56,7 +49,7 @@ class Home extends Component {
       <div className="Home">
 
         <div className="pg1 center">
-            <svg width="70%" className="lineDrawing">
+            <svg viewBox="0 0 1080 500" className="lineDrawing">
               <g className="lines">
                 <path d="M117.9,0V105.9H81.6v-39H48v39H11.7V0H48V37.5H81.6V0Z" transform="translate(0)"/>
                 <path d="M223.5,72.5H165a14,14,0,0,0,6.2,7.2A21.2,21.2,0,0,0,182,82.2a27.7,27.7,0,0,0,9.3-1.4,32.8,32.8,0,0,0,8.2-4.7l18.2,18q-12.3,13.3-36.8,13.3-15.2,0-26.8-5.5a42.3,42.3,0,0,1-17.9-15.4,40,40,0,0,1-6.3-22.1,40.3,40.3,0,0,1,6.2-22.2,42.4,42.4,0,0,1,17.1-15.2,57.2,57.2,0,0,1,47.7-.5,39.8,39.8,0,0,1,16.8,14.7Q224,51,224,64.5,224,65.2,223.5,72.5ZM169,47.8a13.6,13.6,0,0,0-4.6,8.2h27.1a13.9,13.9,0,0,0-4.6-8.1,13.5,13.5,0,0,0-8.9-3A13.7,13.7,0,0,0,169,47.8Z" transform="translate(0)"/>
@@ -78,37 +71,18 @@ class Home extends Component {
             </g>
             </svg>
 
-          </div>
+        </div>
 
-            <div className="pg3 center">
-                <h1 className="header padding" >
-                  Who the hell is aaron dovey? 🤔
-                </h1>
-                  <p className="desc padding">
-                    I'm just another creator with a vision of changing the world in some way or another for the better.
-                  </p>
-                <img src="/img/me.jpg" alt="photo of me" className="img padding"/>
-            </div>
+        <div className="pg3 center">
+          <Reveal effect="fadeInUp">
+                <p  className="desc padding">
+                  I am just another creator with a vision of changing the world in some way or another for the better. I enjoy taking photos, coding, and making music. This is my site. Enjoy ✌️
+                </p>
+            <img src="/img/main.jpg" alt="photo of me" className="img padding"/>
+          </Reveal>
+        </div>
 
-            <Reveal effect="something" wait={500} onReveal={() => this.animate()}>
-              <div className="pg3 center">
-                <h1 className="header padding">
-                  Music
-                </h1>
-                  <p className="desc padding">
-                    Someitmes I make music, sometimes I think it should be on my site.
-                  </p>
-              </div>
-              <div className="music-grid">
-                {data &&
-                  data.map((item, key) => {
-                    return <MusicPlayer key={key} name={item.name} artist={item.artist} image={item.image}/>
-                  })
-                }
-              </div>
-            </Reveal>
-
-          </div>
+      </div>
     );
   }
 }
