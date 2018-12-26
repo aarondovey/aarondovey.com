@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Col2 = (props) => (
     <div className="img-container"><img src={props.Col2} className="gallery-img" alt=""/></div>

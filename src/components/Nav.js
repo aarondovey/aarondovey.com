@@ -164,9 +164,9 @@ class Nav extends React.Component {
 
         <div className="nav center">
             <ul className="nav-group">
-              <Link to="/" className="nav-item home">🏡</Link>
-              <Link to="/photos" className="nav-item photos">📷</Link>
-              <Link to="/music" className="nav-item music">🎵</Link>
+              <Link to="/" className="nav-item home"><span role="img" aria-label="house">🏡</span></Link>
+              <Link to="/photos" className="nav-item photos"><span role="img" aria-label="camera">📷</span></Link>
+              <Link to="/music" className="nav-item music"><span role="img" aria-label="music">🎵</span></Link>
             </ul>
         </div>
 

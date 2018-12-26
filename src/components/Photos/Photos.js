@@ -4,8 +4,7 @@ import Col2 from "./Gallery/2";
 import Col3 from "./Gallery/Col3";
 
 import anime from 'animejs';
-import Reveal from 'react-reveal';
-import Fade from 'react-reveal/Fade';
+
 
 const data = [
   {Col1:"img/building.jpg", Col2:"img/bush.jpg", Col3:"img/cliff.jpg"},
@@ -20,9 +19,9 @@ class Photos extends Component {
 
   componentDidMount() {
 
-    var Col1 = ["img/main.jpg","main.jpg","main.jpg"]
+    // var Col1 = ["img/main.jpg","main.jpg","main.jpg"]
 
-    var lineDrawing = anime({
+    anime({
       duration: 2500,
       delay: function(el, i) { return i * 100 },
       opacity: ["0","1"],

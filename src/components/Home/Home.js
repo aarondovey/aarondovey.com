@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 
 import anime from 'animejs';
-import Reveal from 'react-reveal';
-import Fade from 'react-reveal/Fade';
-
-
 
 class Home extends Component {
 
@@ -21,7 +17,7 @@ class Home extends Component {
 
   componentDidMount() {
 
-    var lineDrawing = anime({
+    anime({
       duration: 2500,
       delay: function(el, i) { return i * 100 },
       opacity: ["0","1"],
@@ -76,13 +72,13 @@ class Home extends Component {
         <div className="pg3">
               <div className="info">
                 <div className="home-images">
-                  <img src="/img/main.jpg" alt="photo of me" className="img"/>
-                  <img src="/img/main.jpg" alt="photo of me" className="img"/>
-                  <img src="/img/main.jpg" alt="photo of me" className="img"/>
-                  <img src="/img/main.jpg" alt="photo of me" className="img"/>
+                  <img src="/img/main.jpg" alt="laksjd" className="img"/>
+                  <img src="/img/main.jpg" alt="qwec" className="img"/>
+                  <img src="/img/main.jpg" alt="wec" className="img"/>
+                  <img src="/img/main.jpg" alt="qec" className="img"/>
                 </div>
                 <p className="desc">
-                I am just another creator with a vision of changing the world in some way or another for the better. I enjoy taking photos, coding, and making music. This is my site. Enjoy ✌️
+                I am just another creator with a vision of changing the world in some way or another for the better. I enjoy taking photos, coding, and making music. This is my site. Enjoy <span role="img" aria-label="peace">✌️</span>
                 </p>
               </div>
         </div>

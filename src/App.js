@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Nav from './components/Nav';
 import Home from './components/Home/Home';
 import Photos from './components/Photos/Photos';
 import Music from './components/Music/Music';
-import Placeholder from './components/Placeholder';
+// import Placeholder from './components/Placeholder';
 
 import './App.css';
 
