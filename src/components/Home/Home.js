@@ -73,13 +73,18 @@ class Home extends Component {
 
         </div>
 
-        <div className="pg3 center">
-          <Reveal effect="fadeInUp">
-                <p  className="desc padding">
-                  I am just another creator with a vision of changing the world in some way or another for the better. I enjoy taking photos, coding, and making music. This is my site. Enjoy ✌️
+        <div className="pg3">
+              <div className="info">
+                <div className="home-images">
+                  <img src="/img/main.jpg" alt="photo of me" className="img"/>
+                  <img src="/img/main.jpg" alt="photo of me" className="img"/>
+                  <img src="/img/main.jpg" alt="photo of me" className="img"/>
+                  <img src="/img/main.jpg" alt="photo of me" className="img"/>
+                </div>
+                <p className="desc">
+                I am just another creator with a vision of changing the world in some way or another for the better. I enjoy taking photos, coding, and making music. This is my site. Enjoy ✌️
                 </p>
-            <img src="/img/main.jpg" alt="photo of me" className="img padding"/>
-          </Reveal>
+              </div>
         </div>
 
       </div>

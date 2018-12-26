@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 
 import './css/Gallery.css';
 
-const MusicPlayer = (props) => (
-      <div className="Gallery">
-          <div className="project">
-            <img className="gallery-img" src={props.img}/>
-        </div>
-      </div>
+const Gallery = (props) => (
+    <div className="img-container"><img src={props.img} className="gallery-img" alt=""/></div>
 )
 
-export default MusicPlayer;
+export default Gallery;

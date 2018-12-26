@@ -6,7 +6,6 @@ const data = [
   {name: "poop", artist: "james", image: "/img/me.jpg", song: "/audio/daf.mp3"},
   {name: "poop", artist: "james", image: "/img/me.jpg", song: "/audio/daf.mp3"},
   {name: "poop", artist: "james", image: "/img/me.jpg", song: "/audio/daf.mp3"},
-  {name: "poop", artist: "james", image: "/img/me.jpg", song: "/audio/daf.mp3"},
 ]
 
 class Music extends Component {
@@ -15,7 +14,7 @@ class Music extends Component {
       <div>
         <div className="pg3 center">
           <h1 className="title padding">
-            Mus<span className="rainbow">i</span>c
+            Music
           </h1>
         </div>
         <div className="music-grid">

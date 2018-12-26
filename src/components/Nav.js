@@ -1,6 +1,7 @@
 import React from 'react';
 import anime from 'animejs';
 import {Link} from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 class Nav extends React.Component {
 
@@ -83,21 +84,39 @@ class Nav extends React.Component {
       targets: '.home',
       offset: 240,
       translateY: ['-1000','0'],
-      delay: 200
+      delay: 100,
     })
 
     .add({
       targets: '.photos',
       offset: 180,
       translateY: ['-1000','0'],
-      delay: 200
+      delay: 100
     })
 
     .add({
       targets: '.music',
       offset: 100,
       translateY: ['-1000','0'],
-      delay: 200
+      delay: 100
+    })
+    ;
+
+    var home = anime.timeline({
+      autoplay: false,
+      direction: 'reverse',
+      duration: 500,
+      easing: [1,0.2,0.2,1],
+      elasticity: 1,
+    });
+
+    home
+
+    .add({
+      targets: '.home',
+      offset: 0,
+      duration: 300,
+      rotate: "360deg",
     })
     ;
 
@@ -133,11 +152,13 @@ class Nav extends React.Component {
   render() {
     return(
       <div className="Nav">
-        <div className="circle">
-          <div className="line-top"></div>
-          <div className="line-mid"></div>
-          <div className="line-bottom"></div>
-        </div>
+        <Fade reveal="fade">
+          <div className="circle">
+            <div className="line-top"></div>
+            <div className="line-mid"></div>
+            <div className="line-bottom"></div>
+          </div>
+        </Fade>
 
         <div className="nav" id="bottom"></div>
 
