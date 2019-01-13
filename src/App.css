@@ -18,6 +18,36 @@
   margin: 0;
   overflow-x: hidden;
   font-family: bold;
+  color: white;
+}
+
+.MusicPlayer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.Artwork {
+  width: 100%;
+}
+
+.space {
+  padding: 100px 0px;
+}
+
+.play {
+  position: absolute;
+  width: 50px;
+}
+
+.hide {
+  display: none;
+}
+
+.left {
+  text-align: left;
 }
 
 .center {
